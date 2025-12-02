@@ -147,8 +147,9 @@
       `;
     }
 
-    const STRIPE_PUBLIC_KEY = "PASTE_YOUR_PUBLISHABLE_KEY_HERE";
-const STRIPE_PRICE_ID = "PASTE_YOUR_PRICE_ID_HERE";
+    const STRIPE_PUBLIC_KEY = "prod_TWxvAEWAkjZYIQ";
+const STRIPE_PRICE_ID = "pk_test_51RT2IC02MpZqiwOSZAuEAJVmiyo83I3Gv8bt3zbRBvurFK5DIZmSZpwpscWOR90N4ICYaDoIBeAUGgCQnMFzP15b00fLJABl7y
+";
 
 function goToCheckout() {
   alert("Stripe is connected in demo mode. Next step will activate real payments.");

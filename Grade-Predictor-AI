@@ -149,7 +149,7 @@
 
     const STRIPE_PUBLIC_KEY = "pk_test_51RT2IC02MpZqiwOSZAuEAJVmiyo83I3Gv8bt3zbRBvurFK5DIZmSZpwpscWOR90N4ICYaDoIBeAUGgCQnMFzP15b00fLJABl7y
 ";
-const STRIPE_PRICE_ID = "prod_TWxvAEWAkjZYIQ";
+const STRIPE_PRICE_ID = "price_1SZtzm02MpZqiwOSwZgyVVRI";
 
 function goToCheckout() {
   alert("Stripe is connected in demo mode. Next step will activate real payments.");

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,6 +51,13 @@
 
       <div id="result" class="mt-4 text-sm font-semibold"></div>
       <div id="studyTips" class="mt-3 text-sm text-gray-700"></div>
+
+      <div class="mt-6 border-t pt-4">
+        <h3 class="font-bold text-lg mb-2">Upgrade to Pro</h3>
+        <p class="text-sm text-gray-600 mb-3">Unlock saved classes, advanced AI tutoring, and multi-class GPA tracking.</p>
+        <button onclick="goToCheckout()" class="w-full bg-purple-600 text-white py-2 rounded-xl hover:bg-purple-700">Upgrade for $4.99 / month</button>
+        <p class="text-xs text-gray-500 mt-2">Secure checkout powered by Stripe</p>
+      </div>
     </div>
 
     <!-- RIGHT: AI CHATBOX -->
@@ -66,9 +74,6 @@
   </div>
 
   <script>
-const STRIPE_PUBLIC_KEY = prod_TWxvAEWAkjZYIQ;
-const STRIPE_PRICE_ID = pk_test_51RT2IC02MpZqiwOSZAuEAJVmiyo83I3Gv8bt3zbRBvurFK5DIZmSZpwpscWOR90N4ICYaDoIBeAUGgCQnMFzP15b00fLJABl7y;
-
     function getLetter(grade, system) {
       if (system === "strict") {
         if (grade >= 92) return "A";
@@ -142,7 +147,14 @@ const STRIPE_PRICE_ID = pk_test_51RT2IC02MpZqiwOSZAuEAJVmiyo83I3Gv8bt3zbRBvurFK5
       `;
     }
 
-    function askAI() {
+    const STRIPE_PUBLIC_KEY = "PASTE_YOUR_PUBLISHABLE_KEY_HERE";
+const STRIPE_PRICE_ID = "PASTE_YOUR_PRICE_ID_HERE";
+
+function goToCheckout() {
+  alert("Stripe is connected in demo mode. Next step will activate real payments.");
+}
+
+function askAI() {
       const input = document.getElementById('userQuestion');
       const chat = document.getElementById('chatBox');
 

@@ -66,6 +66,9 @@
   </div>
 
   <script>
+const STRIPE_PUBLIC_KEY = prod_TWxvAEWAkjZYIQ;
+const STRIPE_PRICE_ID = pk_test_51RT2IC02MpZqiwOSZAuEAJVmiyo83I3Gv8bt3zbRBvurFK5DIZmSZpwpscWOR90N4ICYaDoIBeAUGgCQnMFzP15b00fLJABl7y;
+
     function getLetter(grade, system) {
       if (system === "strict") {
         if (grade >= 92) return "A";
